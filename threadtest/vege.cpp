@@ -2,7 +2,7 @@
 using namespace std;
 #include "vegeclass.h"
 
-//nCi‚ğo—Í‚·‚éŠÖ”
+//nCiã‚’å‡ºåŠ›ã™ã‚‹é–¢æ•°
 double Vege::C(int n, int i){
 	double p1 = 1, p2 = 1;
 	for (int s = n; s > n-i; s--){
@@ -15,7 +15,7 @@ double Vege::C(int n, int i){
 	return p1/p2; 
 }
 
-//(a+b)‚Ìnæ‚Ìi”Ô–Ú‚ğæ‚èo‚·
+//(a+b)ã®nä¹—ã®iç•ªç›®ã‚’å–ã‚Šå‡ºã™
 double Vege::Pascal(double a,double b,int n,int i){
 
 	double a2 = 1, b2 = 1;
@@ -27,7 +27,7 @@ double Vege::Pascal(double a,double b,int n,int i){
 	}
 	return a2*b2*C(n, i);
 }
-
+//ãƒ™ã‚¸ã‚§æ›²ç·šã®æŒ‡å®šæ™‚é–“ã®åº§æ¨™ã‚’å¾—ã‚‹
 Point Vege::vegepoint(double time, list<Point*> &points){
 	double x=0, y=0,f;
 	int i = 0;
