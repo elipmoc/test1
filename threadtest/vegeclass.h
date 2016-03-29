@@ -1,4 +1,5 @@
 
+//À•WƒNƒ‰ƒX
 class Point{
 public:
 	double x;

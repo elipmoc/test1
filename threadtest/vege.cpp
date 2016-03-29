@@ -29,7 +29,6 @@ Point Vege::vegepoint(double time, list<Point*> &points){
 	double x=0, y=0,f;
 	int i = 0;
 	for (list<Point*>::iterator it = points.begin(); it != points.end(); ++it){
-		f = 0;
 		f = Vege::instance()->Pascal(1 - time, time, points.size()-1,i);
 		x += f*(*it)->x;
 		y += f*(*it)->y;
