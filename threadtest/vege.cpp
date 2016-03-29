@@ -1,7 +1,6 @@
-#include <list>
+﻿#include <list>
 using namespace std;
 #include "vegeclass.h"
-
 //nCiを出力する関数
 double Vege::C(int n, int i){
 	double p1 = 1, p2 = 1;
@@ -11,13 +10,11 @@ double Vege::C(int n, int i){
 	for (int s = i; s > 1; s--){
 		p2*=s;
 	}
-	
 	return p1/p2; 
 }
 
 //(a+b)のn乗のi番目を取り出す
 double Vege::Pascal(double a,double b,int n,int i){
-
 	double a2 = 1, b2 = 1;
 	for (int s = n - i; s > 0; s--){
 		a2 *= a;
