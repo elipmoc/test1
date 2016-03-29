@@ -24,7 +24,7 @@ double Vege::Pascal(double a,double b,int n,int i){
 	}
 	return a2*b2*C(n, i);
 }
-//ベジェ曲線の指定時間の座標を得る
+//ベジェ曲線の指定時間の座標を得る。
 Point Vege::vegepoint(double time, list<Point*> &points){
 	double x=0, y=0,f;
 	int i = 0;
